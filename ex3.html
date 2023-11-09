@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="numero">Digite um número</label>
+    <input id="numero" type="number">
+    <input id="btn" type="button" value="enter">
+    
+    <script>
+        const btn = document.querySelector("#btn");
+        const input = document.querySelector("#numero");
+
+        btn.addEventListener("click", result);
+
+        function result(){
+            if(input.value<0){
+                alert("O número é negativo!");
+            }else if(input.value>0){
+                alert("O número é positivo!");
+            }else if(input.value==0){
+                alert("O número é 0");
+            }
+        }
+    </script>
+</body>
+</html>

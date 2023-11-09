@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="number1" type="number">
+    <input id="number2" type="number">
+    <input id="confirm" type="button" value="Confirm">
+    
+    <script>
+        const button = document.querySelector("#confirm");
+        const input1 = document.querySelector("#number1");
+        const input2 = document.querySelector("#number2");
+
+        button.addEventListener("click", soma);
+
+        function soma(){
+            if(input1!="" && input2!=""){
+                alert("O resultado da multiplicação é: " + (input1.value * input2.value));
+            }
+        }
+    </script>
+</body>
+</html>
